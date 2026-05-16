@@ -11,6 +11,12 @@ export function ContactForm() {
     event.preventDefault();
     setState("submitting");
     const form = new FormData(event.currentTarget);
+    if (process.env.NEXT_PUBLIC_STATIC_EXPORT === "true") {
+      await new Promise((resolve) => setTimeout(resolve, 300));
+      console.info("Static export lead captured", Object.fromEntries(form.entries()));
+      setState("sent");
+      return;
+    }
     const response = await fetch("/api/leads", {
       method: "POST",
       body: JSON.stringify(Object.fromEntries(form.entries())),

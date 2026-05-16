@@ -15,6 +15,18 @@ This repository is intentionally small but realistic. It gives the learning flow
 - `/contact` - client-side contact form posting to `/api/leads`
 - `/api/leads` - mock lead capture endpoint
 
+## GitHub Pages
+
+This app can be statically exported for GitHub Pages. The Pages workflow sets
+`GITHUB_PAGES=true` and publishes the generated `out/` directory.
+
+```bash
+GITHUB_PAGES=true NEXT_PUBLIC_STATIC_EXPORT=true npm run build
+```
+
+In static export mode, the contact form simulates the mock lead capture in
+client state because GitHub Pages cannot run the `/api/leads` route.
+
 ## Learning checkpoints
 
 - App Router pages live under `src/app`.
