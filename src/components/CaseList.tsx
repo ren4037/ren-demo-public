@@ -10,6 +10,7 @@ export function CaseList({ cases }: { cases: CaseStudy[] }) {
           <h3>{item.name}</h3>
           <strong>{item.result}</strong>
           <p>{item.detail}</p>
+          <em>Review sample</em>
         </Link>
       ))}
     </div>

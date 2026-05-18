@@ -8,7 +8,7 @@ export async function POST(request: Request) {
 
   return NextResponse.json({
     status: "accepted",
-    leadId: "lead_demo_001",
+    noteId: "seo_note_001",
     received: payload
   });
 }

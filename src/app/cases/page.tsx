@@ -7,9 +7,9 @@ export default function CasesPage() {
     <main>
       <SiteHeader />
       <section className="page-shell">
-        <p className="eyebrow">Cases</p>
-        <h1>Example workflows for browser capture planning</h1>
-        <p className="lead">Each case has a detail route so a learning agent can discover dynamic App Router pages.</p>
+        <p className="eyebrow">Page samples</p>
+        <h1>Three content shapes for search audit experiments</h1>
+        <p className="lead">Each sample uses a dynamic detail route with visible content gaps that can be measured before later optimization rounds.</p>
         <CaseList cases={caseStudies} />
       </section>
     </main>

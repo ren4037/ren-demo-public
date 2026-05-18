@@ -7,9 +7,9 @@ export default function ContactPage() {
       <SiteHeader />
       <section className="page-shell split-layout">
         <div>
-          <p className="eyebrow">Contact</p>
-          <h1>Request a repository learning walkthrough</h1>
-          <p className="lead">This page includes a client component and a mock POST endpoint for scanner coverage.</p>
+          <p className="eyebrow">Intake</p>
+          <h1>Capture the next SEO test hypothesis</h1>
+          <p className="lead">Use this form to collect a future audit idea while keeping the first version focused on baseline frontend behavior.</p>
         </div>
         <ContactForm />
       </section>

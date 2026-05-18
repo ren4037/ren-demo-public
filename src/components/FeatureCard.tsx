@@ -6,6 +6,7 @@ export function FeatureCard({ feature }: { feature: Feature }) {
       <span className="accent-label">{feature.accent}</span>
       <h3>{feature.title}</h3>
       <p>{feature.summary}</p>
+      <small>{feature.detail}</small>
     </article>
   );
 }

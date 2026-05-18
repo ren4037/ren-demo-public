@@ -2,16 +2,16 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/features", label: "Features" },
-  { href: "/cases", label: "Cases" },
-  { href: "/contact", label: "Contact" }
+  { href: "/features", label: "Matrix" },
+  { href: "/cases", label: "Samples" },
+  { href: "/contact", label: "Intake" }
 ];
 
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <Link className="brand" href="/" aria-label="Ren Demo Public home">
-        Ren Demo Public
+      <Link className="brand" href="/" aria-label="SEO Baseline Lab home">
+        SEO Baseline Lab
       </Link>
       <nav aria-label="Primary navigation">
         {links.map((link) => (
