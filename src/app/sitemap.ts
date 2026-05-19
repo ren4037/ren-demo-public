@@ -3,7 +3,8 @@ import { caseStudies } from "@/lib/demoData";
 
 export const dynamic = "force-static";
 
-const BASE_URL = "https://ren4037.github.io/ren-demo-public";
+const BASE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://ren-demo-public.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
