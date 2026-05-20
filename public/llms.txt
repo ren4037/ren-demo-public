@@ -1,0 +1,13 @@
+# SEO Baseline Demo
+> A public demo site with intentionally unoptimized pages, designed as a baseline for SEO and AI discoverability audit experiments.
+
+## Section: Core Pages
+- [Home](https://ren-demo-public.vercel.app/): Entry point showcasing the unoptimized baseline, page metrics, and audit preview for SEO testing experiments.
+- [Features](https://ren-demo-public.vercel.app/features): Feature matrix listing the three page types (route set, copy mix, UI states) available for SEO audit comparison.
+- [Case Studies](https://ren-demo-public.vercel.app/cases): Index of sample pages representing different real-world page shapes for crawler and audit analysis.
+- [Contact](https://ren-demo-public.vercel.app/contact): Contact form page providing a baseline form interaction surface for lead capture and SEO form testing.
+
+## Section: Case Study Pages
+- [Baseline Product Page](https://ren-demo-public.vercel.app/cases/baseline-product-page): A commercial product-style page with hero copy, benefits, and proof points — intentionally missing title tags, Open Graph, and product schema.
+- [Thin Article Page](https://ren-demo-public.vercel.app/cases/thin-article-page): A lightweight editorial article page with minimal body copy, used to benchmark thin content improvements and heading structure changes.
+- [Local Service Page](https://ren-demo-public.vercel.app/cases/local-service-page): A location-oriented service page without local business schema, map data, or location-specific meta — baseline for local SEO testing.
