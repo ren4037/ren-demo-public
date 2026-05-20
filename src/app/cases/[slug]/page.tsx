@@ -32,6 +32,14 @@ export async function generateMetadata({
       description: item.detail,
       url: `/cases/${slug}`,
       type: "article",
+      images: [
+        {
+          url: "/opengraph-image",
+          width: 1200,
+          height: 630,
+          alt: "SEO Baseline Lab – unoptimized demo pages for SEO audit experiments",
+        },
+      ],
     },
   };
 }

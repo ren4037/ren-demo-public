@@ -17,16 +17,24 @@ const howToSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "Testing Matrix – Page Patterns for Baseline Crawl Reviews",
+  title: { absolute: "Testing Matrix – SEO Page Patterns for Audit" },
   description:
     "A compact route map with mixed page types for comparing crawler output before SEO changes. Understand baseline content density, copy mix, and UI states.",
   alternates: { canonical: "/features" },
   openGraph: {
-    title: "Testing Matrix – Page Patterns for Baseline Crawl Reviews",
+    title: "Testing Matrix – SEO Page Patterns for Audit",
     description:
       "A compact route map with mixed page types for comparing crawler output before SEO changes. Understand baseline content density, copy mix, and UI states.",
     url: "/features",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "SEO Baseline Lab – unoptimized demo pages for SEO audit experiments",
+      },
+    ],
   },
 };
 

@@ -3,16 +3,24 @@ import { ContactForm } from "@/components/ContactForm";
 import { SiteHeader } from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "Intake – Capture Your Next SEO Test Hypothesis",
+  title: { absolute: "Intake – Log Your Next SEO Audit Idea" },
   description:
     "Submit a future SEO audit idea or test hypothesis. A simple intake form for collecting optimization leads from your baseline crawl.",
   alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Intake – Capture Your Next SEO Test Hypothesis",
+    title: "Intake – Log Your Next SEO Audit Idea",
     description:
       "Submit a future SEO audit idea or test hypothesis. A simple intake form for collecting optimization leads from your baseline crawl.",
     url: "/contact",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "SEO Baseline Lab – unoptimized demo pages for SEO audit experiments",
+      },
+    ],
   },
 };
 

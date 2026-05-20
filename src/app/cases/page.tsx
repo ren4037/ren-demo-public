@@ -4,16 +4,24 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { caseStudies } from "@/lib/demoData";
 
 export const metadata: Metadata = {
-  title: "Case Samples – Three Content Shapes for SEO Audits",
+  title: { absolute: "Case Samples – SEO Audit Baseline Demos" },
   description:
     "Three demo pages representing different real-world content shapes – product, article, and local service – for audit baseline comparison before optimization.",
   alternates: { canonical: "/cases" },
   openGraph: {
-    title: "Case Samples – Three Content Shapes for SEO Audits",
+    title: "Case Samples – SEO Audit Baseline Demos",
     description:
       "Three demo pages representing different real-world content shapes – product, article, and local service – for audit baseline comparison before optimization.",
     url: "/cases",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "SEO Baseline Lab – unoptimized demo pages for SEO audit experiments",
+      },
+    ],
   },
 };
 

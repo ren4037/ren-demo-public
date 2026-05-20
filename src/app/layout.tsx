@@ -36,6 +36,14 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "SEO Baseline Lab",
     locale: "en_US",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "SEO Baseline Lab – unoptimized demo pages for SEO audit experiments",
+      },
+    ],
   },
   robots: { index: true, follow: true },
 };
