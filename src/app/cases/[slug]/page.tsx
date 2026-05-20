@@ -16,12 +16,19 @@ export async function generateMetadata({
   const { slug } = await params;
   const item = caseStudies.find((entry) => entry.slug === slug);
   if (!item) return {};
+  const sectorLabel =
+    item.sector === "Commercial page"
+      ? "Commercial SEO Audit Baseline Demo"
+      : item.sector === "Editorial page"
+        ? "Editorial Content SEO Audit Baseline"
+        : "Location Business SEO Audit Baseline";
+  const fullTitle = `${item.name}: ${sectorLabel}`;
   return {
-    title: `${item.name} – Case Sample`,
+    title: { absolute: fullTitle },
     description: item.detail,
     alternates: { canonical: `/cases/${slug}` },
     openGraph: {
-      title: `${item.name} – Case Sample`,
+      title: fullTitle,
       description: item.detail,
       url: `/cases/${slug}`,
       type: "article",

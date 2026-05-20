@@ -36,12 +36,12 @@ const faqSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "SEO Baseline Lab – Unoptimized Demo Frontend",
+  title: { absolute: "SEO Baseline Lab – Unoptimized Frontend for SEO Audits" },
   description:
     "Explore a minimal public site built as a neutral starting point for SEO and AI discoverability audits. Compare crawler behavior before and after optimization.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "SEO Baseline Lab – Unoptimized Demo Frontend",
+    title: "SEO Baseline Lab – Unoptimized Frontend for SEO Audits",
     description:
       "Explore a minimal public site built as a neutral starting point for SEO and AI discoverability audits. Compare crawler behavior before and after optimization.",
     url: "/",
@@ -144,8 +144,8 @@ export default function Home() {
             panel and feature summary.
           </li>
           <li>
-            <Link href="/features">Testing Matrix</Link> – An index of the
-            three page patterns used across the project.
+            <Link href="/features">Testing Matrix</Link> – An index of the three
+            page patterns used across the project.
           </li>
           <li>
             <Link href="/cases">Case Samples</Link> – An index linking to three
@@ -166,8 +166,8 @@ export default function Home() {
             lightweight editorial page for testing thin-content improvements.
           </li>
           <li>
-            <Link href="/cases/local-service-page">Local Service Page</Link> –
-            A location page without local schema or geo markup.
+            <Link href="/cases/local-service-page">Local Service Page</Link> – A
+            location page without local schema or geo markup.
           </li>
         </ul>
         <p>
@@ -211,7 +211,9 @@ export default function Home() {
             applying any improvements. Without a before snapshot, you cannot
             calculate the true impact of your optimization work.
           </dd>
-          <dt>Why are title tags and meta descriptions intentionally missing?</dt>
+          <dt>
+            Why are title tags and meta descriptions intentionally missing?
+          </dt>
           <dd>
             The absence of title tags, meta descriptions, and schema markup is
             by design. This site tests how audit tools behave when metadata is
